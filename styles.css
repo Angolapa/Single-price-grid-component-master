@@ -6,6 +6,7 @@
 --Grayish_Blue: hsl(218, 22%, 67%);
 --Cyan: hsl(179, 62%, 43%);
 --Bright_Yellow: hsl(71, 73%, 54%);
+--Light_Bright_Yellow:hsl(71, 83%, 70%);
 }
 
 
@@ -59,7 +60,7 @@ body{
     padding: 12px 24px 24px 24px;/*Margenes interiores*/
     height: 230px;/*Altura*/
     box-sizing: border-box;/*Evitar que aumente de tamano del contenedor*/
-    color: var(--Light_Gray);
+    color: var(--Bright_Yellow);
 }
 
 .monthly_subscription h2{
@@ -76,14 +77,24 @@ body{
 }
 button{
     margin-top: 14px;/*Margen superior*/
-    color: var(--Bright_Yellow);
+    background-color: var(--Bright_Yellow);
     border-radius: 5px;/*Redondear borde*/
     width: 100%;/*Ancho*/
     height: 48px;/*Alto*/
     border-style: none;/*Quitar estilos*/
     font-size: 16px; /*Cambiar el tamaño de la letra*/
     font-weight: 700px;
+    color: var(--Light_Gray);
 
+}
+
+button:active {
+    transform: scale(0.9);
+  }
+button:hover{
+    cursor: pointer;
+    background-color: var(--Light_Bright_Yellow);
+   
 }
 
 /*-------------Why Us--------*/
